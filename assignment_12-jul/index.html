@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fav song</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            font-family: 'Poppins';
+        }
+
+        .title-section {
+            width: 100%;
+        }
+
+        .title-container {
+            padding: 50px;
+            text-align: center;
+            font-size: 2rem;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+
+            background: rgba(24, 24, 24, 0.36);
+            backdrop-filter: blur(.9px);
+            -webkit-backdrop-filter: blur(.9px);
+
+            color: aliceblue;
+            font-weight: 900;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #000000;
+        }
+
+        .title-bg {
+            background-image: url("asserts/music-bg.avif");
+            background-size: 300px;
+        }
+
+        .body-section{
+            background-image: url("asserts/bg-1.avif");
+            min-height: 70vh;
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .black-glass {
+            background: rgba(24, 24, 24, 0.36);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5.5px);
+            -webkit-backdrop-filter: blur(5.5px);
+            border: 1px solid rgba(24, 24, 24, 0.27);
+        }
+
+        .song-container{
+            margin-top: 50px;
+            padding: 20px;
+            height: fit-content;
+        }
+
+        .song{
+            background:rgb(73, 73, 73);
+            padding: 15px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            transition: all 1s;
+        }
+
+        a:hover{
+            color: rgb(255, 196, 0);
+            transition: all 400ms;
+        }
+
+    </style>
 </head>
+
 <body>
-    
+    <section class="title-section">
+        <div class="title-bg">
+            <div class="title-container">
+                My Fav Songs 🎶
+                <span style="font-size: 1.2rem;-webkit-text-stroke-width: 1.5px;">
+                    (Not accually)
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="body-section">
+        <div class="song-container black-glass">
+            <div class="song">
+                <a href="song-1.html">
+                    1. Thuli Thuli Mazhaiyaai - from "Paiya"
+                </a>
+            </div>
+            <div class="song">
+                <a href="song-2.html">
+                    2. Saarattu Vandiyila - From "Kaatru Veliyidai"
+                </a>
+            </div>
+            <div class="song">
+                <a href="song-3.html">
+                    3. Daddy Mummy - from "Villu"
+                </a>
+            </div>
+            <div class="song">
+                <a href="song-4.html">
+                    4. Badass - from "leo"
+                </a>
+            </div>
+            <div class="song">
+                <a href="song-5.html">
+                    5. Fear Song - from "Devara"
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
