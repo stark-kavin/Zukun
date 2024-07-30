@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    font-size: 16px;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto';
+
+    /* border: 1px solid red; */
+}
+
+
+nav {
+    background-color: black;
+    width: 5rem;
+    height: 100vh;
+    transition: .5s;
+    position: fixed;
+    z-index: 100;
+}
+
+
+
+@keyframes fade-in {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+}
+
+
+
+nav ul {
+    background-color: rgba(25, 25, 25, 0.755);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+nav li {
+    display: flex;
+    width: 100%;
+    transition: all 1s;
+}
+
+nav svg {
+    width: 5rem;
+    color: white;
+    transition: all 1s;
+}
+
+.nav-name {
+    overflow: hidden;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    display: none;
+    opacity: 0;
+    font-weight: 500;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    color: white;
+    transition: all 1s;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-name::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 8px;
+    background-color: rgb(230, 0, 255);
+    bottom: -5px;
+    left: 0px;
+}
+
+nav ul li:last-child {
+    margin-top: auto;
+    color: red;
+}
+
+
+@media only screen and (min-width: 750px) {
+
+    nav ul li:last-child .nav-name::after {
+        background-color: rgb(255, 0, 0);
+    }
+
+    li:hover {
+        background-color: rgb(29, 29, 29);
+        transition: .5s;
+    }
+
+
+    li:hover .nav-name {
+        color: rgb(217, 5, 255);
+        transition: .5s;
+        transition-timing-function: ease-out;
+    }
+
+    li:hover .nav-name::after {
+        width: 100%;
+        transition: .5s;
+    }
+
+    li:hover svg {
+        color: rgb(217, 5, 255);
+        transition: .7s;
+    }
+
+    nav:hover .nav-name {
+        display: inline;
+        animation: fade-in .5s;
+        animation-fill-mode: forwards;
+    }
+
+    nav:hover {
+        width: 16rem;
+        transition: width .6s;
+    }
+
+    li:hover .last {
+        color: red;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    nav {
+        background-color: black;
+        width: 100vw;
+        height: 5rem;
+        bottom: 0;
+    }
+
+    nav ul {
+        background-color: rgba(25, 25, 25, 0.755);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+
+    nav li {
+        display: flex;
+        width: fit-content;
+        transition: all 1s;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        overflow: scroll;
+    }
+
+    nav svg {
+        width: fit-content;
+        color: white;
+        transition: all 1s;
+    }
+
+}

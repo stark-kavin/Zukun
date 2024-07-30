@@ -1,0 +1,148 @@
+
+main{
+    margin-left: 5rem;
+    background-color: #0f0f0f;
+}
+
+.header{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .title img{
+    height: 2rem;
+}
+
+.header .title .name{
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    font-weight: "Roboto";
+}
+
+.header .search{
+    height: 2.5rem;
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    border: 1px solid #303030;
+    overflow: hidden;
+    border-radius: 2rem;
+    color: white;
+    flex: 2;
+}
+
+.header .search input{
+    all: unset;
+    background-color: white;
+    height: 100%;
+    background-color: #121212;
+    padding-left: 1rem;
+    flex: auto;
+}
+
+.header .search button{
+    all: unset;
+    margin-left: 0%;
+    background-color: white;
+    height: 100%;
+    padding: 0rem 1.5rem;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.videos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+.videos .video{
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 16 / 11;
+    cursor: pointer;
+}
+
+.videos .video .img{
+    flex: auto;
+    background-color: #303030;
+    border-radius: 1rem;
+    background-image: url("../assests/video-bg.avif");
+    position: relative;
+    box-shadow: 1px 1px 3px black;
+    transition: box-shadow 1s;
+}
+
+main .sort{
+    display: flex;
+    padding: 1rem 3rem;
+    gap: .5rem;
+    align-items: center;
+}
+
+main .sort div{
+    color: white;
+}
+
+main .sort select{
+    background-color: #303030;
+    color: white;
+    border: #222222;
+    border-radius :5px;
+    padding: 5px;
+}
+
+.videos .video .img .blur{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(1px);
+}
+
+.videos .video:hover .img{
+    box-shadow: 10px 10px 5px black;
+    transition: .3s;
+}
+
+.videos .video .details{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    color: white;
+}
+
+.videos .video .img .title{
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+@media only screen and (max-width: 750px) {
+    main{
+        margin-left: unset;
+        transition: 1s;
+    }
+}
