@@ -109,7 +109,8 @@ section {
     height: 7rem;
     display: flex;
     padding: .5rem;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 1rem;
     background-color: white;
     margin-bottom: .6rem;
 }
