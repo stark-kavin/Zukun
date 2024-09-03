@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipcart Clone</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./assets/flipkart-logo.png" alt="">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="🔍 Search for Products, Brands and more">
+        </div>
+        <div class="options">
+            <div class="option">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle"
+                    viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                </svg>
+                <div class="name">
+                    Login
+                </div>
+                <svg class="drop" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                </svg>
+            </div>
+            <div class="option">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>
+                <div class="name">
+                    Cart
+                </div>
+            </div>
+            <div class="option">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z" />
+                </svg>
+                <div class="name">
+                    Become a Seller
+                </div>
+            </div>
+        </div>
+        <div class="more">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+            </svg>
+        </div>
+    </nav>
+
+    <main>
+        <section class="category">
+            <div class="option">
+                <img src="./assets/grocery.png" alt="">
+                <div class="name">Grocery</div>
+            </div>
+            <div class="option">
+                <img src="./assets/smartphone.png" alt="">
+                <div class="name">Mobiles</div>
+            </div>
+            <div class="option">
+                <img src="./assets/online-shopping.png" alt="">
+                <div class="name">Fashion</div>
+            </div>
+            <div class="option">
+                <img src="./assets/electric-appliance.png" alt="">
+                <div class="name">Appliance</div>
+            </div>
+            <div class="option">
+                <img src="./assets/travel.png" alt="">
+                <div class="name">Travel</div>
+            </div>
+            <div class="option">
+                <img src="./assets/karizma.png" alt="">
+                <div class="name">Two Weelers</div>
+            </div>
+            <div class="option">
+                <img src="./assets/furniture.png" alt="">
+                <div class="name">Furniture</div>
+            </div>
+        </section>
+    
+        <section class="banner">
+    
+            <img src="./assets/flipkart-logo.png" alt="">
+            
+            <svg class="more" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path
+                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+            </svg>
+            <div class="left-shift shift">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                </svg>
+            </div>
+            <div class="right-shift shift">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                </svg>
+            </div>
+    
+        </section>
+    
+        <section class="display">
+            <div class="title">
+                Smart Phones My roommates uses
+            </div>
+            <div class="mobiles">
+                <div class="mobile">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/m/h/z/-original-imagbh7rzbvfgqex.jpeg?q=70&crop=false" alt="">
+                    <div class="details">
+                        <div class="name">Redmi Note 11</div>
+                        <div class="price">From ₹15,999</div>
+                    </div>
+                </div>
+                <div class="mobile">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/m/h/z/-original-imagbh7rzbvfgqex.jpeg?q=70&crop=false" alt="">
+                    <div class="details">
+                        <div class="name">Redmi Note 11</div>
+                        <div class="price">From ₹15,999</div>
+                    </div>
+                </div>
+                <div class="mobile">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/m/h/z/-original-imagbh7rzbvfgqex.jpeg?q=70&crop=false" alt="">
+                    <div class="details">
+                        <div class="name">Redmi Note 11</div>
+                        <div class="price">From ₹15,999</div>
+                    </div>
+                </div>
+                <div class="mobile">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/m/h/z/-original-imagbh7rzbvfgqex.jpeg?q=70&crop=false" alt="">
+                    <div class="details">
+                        <div class="name">Redmi Note 11</div>
+                        <div class="price">From ₹15,999</div>
+                    </div>
+                </div>
+                <div class="mobile">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/m/h/z/-original-imagbh7rzbvfgqex.jpeg?q=70&crop=false" alt="">
+                    <div class="details">
+                        <div class="name">Redmi Note 11</div>
+                        <div class="price">From ₹15,999</div>
+                    </div>
+                </div>
+                <div class="mobile">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/m/h/z/-original-imagbh7rzbvfgqex.jpeg?q=70&crop=false" alt="">
+                    <div class="details">
+                        <div class="name">Redmi Note 11</div>
+                        <div class="price">From ₹15,999</div>
+                    </div>
+                </div>
+                <div class="mobile">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/m/h/z/-original-imagbh7rzbvfgqex.jpeg?q=70&crop=false" alt="">
+                    <div class="details">
+                        <div class="name">Redmi Note 11</div>
+                        <div class="price">From ₹15,999</div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
